@@ -1,0 +1,20 @@
+model_name = "California Housing Price";
+algorithm = LinearRegression;
+csv_path = "./tests/housing.csv";
+train_test_split = [80, 20];
+target = "median_house_value";
+features = [
+  "longitude",
+  "latitude",
+  "housing_median_age",
+  "total_rooms",
+  "total_bedrooms",
+  "population",
+  "households",
+  "median_income"
+];
+epochs = 400;
+learning_rate = 0.5;
+batch_size = 64;
+early_stop = { "patience": 20 };
+output_path = "./tests/housing_model.json";
