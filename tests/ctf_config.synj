@@ -1,0 +1,11 @@
+model_name = "Celsius To Farenheit";
+algorithm = LinearRegression;
+csv_path = "./tests/ctf.csv";
+train_test_split = [80, 20];
+target = "Farenheit";
+features = ["Celsius"];
+epochs = 1600;
+learning_rate = 0.1;
+batch_size = NULL;
+early_stop = { "patience": 1400 };
+output_path = "./tests/ctf_model.json";
